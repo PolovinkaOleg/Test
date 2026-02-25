@@ -1,0 +1,22 @@
+services:
+  directus:
+    image: directus/directus:11.5.1
+    container_name: lab-directus
+    ports:
+      - "8055:8055"
+    environment:
+      KEY: replace-with-long-random-key
+      SECRET: replace-with-long-random-secret
+      ADMIN_EMAIL: admin@example.com
+      ADMIN_PASSWORD: admin12345
+      DB_CLIENT: sqlite3
+      DB_FILENAME: /directus/database/data.db
+      WEBSOCKETS_ENABLED: "true"
+      CORS_ENABLED: "true"
+      CORS_ORIGIN: "true"
+      PUBLIC_URL: http://localhost:8055
+    volumes:
+      - ./cms/directus/database:/directus/database
+      - ./cms/directus/uploads:/directus/uploads
+      - ./cms/directus/extensions:/directus/extensions
+    restart: unless-stopped
