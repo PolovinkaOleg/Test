@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лаборатория вычислительных систем — Новости</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/cms-config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Лаборатория вычислительных систем</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">Меню</button>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html" data-page="index.html">Главная</a></li>
+          <li><a href="news.html" data-page="news.html">Новости</a></li>
+          <li><a href="team.html" data-page="team.html">Научный состав</a></li>
+          <li><a href="research.html" data-page="research.html">Научная деятельность</a></li>
+          <li><a href="about.html" data-page="about.html">О лаборатории</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Новости лаборатории</h1>
+        <p class="subtitle">Актуальные события, победы в грантах и результаты научных проектов.</p>
+        <p>Раздел подключен к Headless CMS (Directus): новости добавляются через админ-панель без редактирования кода.</p>
+        <p><a class="button" href="http://localhost:8055/admin" target="_blank" rel="noopener noreferrer">Открыть админку Directus</a></p>
+      </section>
+
+      <p id="news-status" class="subtitle" role="status" aria-live="polite">Загрузка новостей...</p>
+      <section id="news-list" class="card-grid" aria-label="Лента новостей"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <strong>Лаборатория вычислительных систем</strong>
+      <p>г. Москва, ул. Научная, д. 12 · +7 (495) 000-00-00 · lab-info@example.ru</p>
+    </div>
+  </footer>
+</body>
+</html>

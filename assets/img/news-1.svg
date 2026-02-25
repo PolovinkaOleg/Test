@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
+  <title id="t">Грантовый проект</title>
+  <desc id="d">Иллюстративное изображение для сайта лаборатории</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#184a74"/>
+      <stop offset="100%" stop-color="#5e8db2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="130" cy="90" r="44" fill="rgba(255,255,255,.24)"/>
+  <circle cx="730" cy="420" r="64" fill="rgba(255,255,255,.18)"/>
+  <rect x="70" y="345" width="660" height="95" rx="14" fill="rgba(255,255,255,.2)"/>
+  <text x="400" y="398" fill="#ffffff" text-anchor="middle" font-size="35" font-family="Arial, sans-serif">Грантовый проект</text>
+</svg>
